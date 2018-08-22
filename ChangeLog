@@ -1,3 +1,183 @@
+2018-08-06  osnola  <alonso@loria.fr>  [792e04dccd01f5d443a416f8613e0fde5a11ede6]
+
+tcppcheck: correct some warnings...
+
+
+2018-08-06  osnola  <alonso@loria.fr>  [bfd3fc9ce074f70eb34b4197ab62414166371b39]
+
+tg++: correct some warnings...
+
+
+2018-08-06  osnola  <alonso@loria.fr>  [08808ac999688e315e2b1262f9f58765a6b0276f]
+
+tupdate README files...
+
+
+2018-08-06  osnola  <alonso@loria.fr>  [5d363893a40deb9e4ff1d89f8a9def89e0f8ccc0]
+
+tcoverity: remove dead code...
+
+
+2018-08-02  osnola  <alonso@loria.fr>  [da81e3064c85364b111edc12f146a6cdb6823220]
+
+t.qwp: ask for the encoding...
+
+
+2018-08-02  osnola  <alonso@loria.fr>  [3ebf13c07377c29e9f45552e960e22041ac362a0]
+
+tmultiplan: allow to retrieve complex encodings...
+
+
+2018-08-02  osnola  <alonso@loria.fr>  [a17271ba1de77f896bd510b4c1930b84882451db]
+
+tOLE: : allow to retrieve complex encodings...
+
+
+2018-08-01  osnola  <alonso@loria.fr>  [9552246bbbfa2c418af64bb24fd612077ba32325]
+
+t.wps[1-4]: allow to retrieve complex encodings...
+
+
+2018-08-01  osnola  <alonso@loria.fr>  [30540a0ca694b648a9fa961aece7cdd3fa9f108e]
+
+tfield: implement date/time field correctly...
+
+
+2018-08-01  osnola  <alonso@loria.fr>  [157a0335922ddd1ae1ca5038bccdc7697611bf9f]
+
+t.qwp: allow to retrieve complex encodings...
+
+
+2018-08-01  osnola  <alonso@loria.fr>  [44068d2d649a175f3ddb9fcdba2472580348af8d]
+
+t.wb*: allow to retrieve complex encodings...
+
+
+2018-08-01  osnola  <alonso@loria.fr>  [c23a111ceba096934c1054f719388b1b994042c6]
+
+t.wq*: allow to retrieve complex encodings...
+
+
+2018-08-01  osnola  <alonso@loria.fr>  [663bb26645b6219e246648ff7d225f5f88b608f4]
+
+t.wk*: allow to retrieve complex encodings...
+
+
+2018-07-31  osnola  <alonso@loria.fr>  [42a5c4e27e3b2c7e4de1bcf045ede9a8737f559d]
+
+tLotus: allow to retrieve complex encodings...
+
+
+2018-07-31  osnola  <alonso@loria.fr>  [0187e91147a64732e4525b0f11e92a48389b5220]
+
+tencoding[LICS]: simplify the code...
+
+
+2018-07-31  osnola  <alonso@loria.fr>  [065c7ef5d300146f2136ebab599d6931f722bc10]
+
+tclang: finish to remove many Weverything warnings...
+
+
+2018-07-31  osnola  <alonso@loria.fr>  [72cf41afae265b7cab006bca2031154d4b924d95]
+
+tclang: continue to suppress some -Weverything warnings...
+
+
+2018-07-30  osnola  <alonso@loria.fr>  [32d3f263e818c1de22e983ff4b8193088bcd714c]
+
+tclang: try to remove some -Weverything warning, to be continued...
+
+
+2018-07-30  osnola  <alonso@loria.fr>  [58e88f1253e3473130d07a76b211958948ba9af3]
+
+tqpw: force the cell style's length to be 36 for X2..X9 files...
+
+
+2018-05-30  osnola  <alonso@loria.fr>  [7f5f5b80ae05dd7562a094f038efeae4f7d0f793]
+
+tQuattroPro[.qpw]: try to retrieve some OLE's pictures, ...
+
+
+2018-05-29  osnola  <alonso@loria.fr>  [9f39d99c356f46be9f7db06159bda9c4b6cbbb54]
+
+tQuattroPro[.qwp]: try to retrieve some textboxes...
+
+
+2018-05-29  osnola  <alonso@loria.fr>  [38645618b8f569ba2c6eaee5ef980e372ccf7d0d]
+
+tQuattroPro[.qpw]: try to retrieve more complex geometrical shapes...
+
+
+2018-05-28  osnola  <alonso@loria.fr>  [2883f267eef7585a4e0a9507306913f0be2ef219]
+
+tQuattroPro[.qpw]: begin to retrieve some geometrical shapes...
+
+
+2018-05-24  osnola  <alonso@loria.fr>  [7d2cd0774529cdadd938668aa050daaa96441ef8]
+
+tQuattroPro[.qpw]: add support for big blocks...
+
+
+2018-05-24  osnola  <alonso@loria.fr>  [681331420e05f77bd5e9e685a0c7de4a681d4394]
+
+tQuattroPro[.qpw]: change code to read big cell's style zone with size. libwps_internal.cpp: allow to have more than 26*26 column...
+
+
+2018-05-23  osnola  <alonso@loria.fr>  [8061f26b216ccb2c78864ef4399f9a7234df901b]
+
+tQuattroPro[.qpw]: active the filter in non debug mode   + add code to read files protected with password...
+
+
+2018-05-23  osnola  <alonso@loria.fr>  [ebd71252225dd217d284f21240d4509b1b4403f0]
+
+tQuattroPro[.qpw]: begin to retrieve some formula  + create a class QuattroFormulaManager to read the formula   in .wb1-.wb3 and .qpw files...
+
+
+2018-05-22  osnola  <alonso@loria.fr>  [66f5b0f166cc1f600c24bf6fd8ad3c7d677af85c]
+
+tQuattroPro[.qpw]: try to retrieve the cell's background color...
+
+
+2018-05-22  osnola  <alonso@loria.fr>  [b7e4a9c18197d6eff99a0b44cf64c258436ad0b7]
+
+tQuattroPro[.qpw]: update the color table + retrieve some borders...
+
+
+2018-05-21  osnola  <alonso@loria.fr>  [cb2c2f82e544c88ae6a2b1c14982943e5108ba05]
+
+tQuattroPro[.qpw]: try to retrieve the numbering format... QuattroPro[.wb1-3]: ask for the encoding...
+
+
+2018-05-20  osnola  <alonso@loria.fr>  [180a589afba16e0d48775212a840de4094d1cb6a]
+
+tQuattroPro[.qpw]: try to retrieve the complex zone of text...
+
+
+2018-05-20  osnola  <alonso@loria.fr>  [42bd2bcb317169774ab5c4ca62b034adfacbdd85]
+
+tQuattroPro[.qpw]: begin to retrieve some cell's content, to be 	continued...
+
+
+2018-05-17  osnola  <alonso@loria.fr>  [4f10866b5dd2f1a370bba6e1ed217c5143bce31e]
+
+tadd files to create a parser for .qpw files: - begin to parse the main spreadsheet's zones (except the formula)   when compiled in debug mode, to be continued...
+
+
+2018-05-05  David Tardon  <dtardon@redhat.com>  [b8897585d4ffa503d88c98b31fbb5b7ccc2a01cd]
+
+tdisable werror by default
+
+
+2018-04-26  David Tardon  <dtardon@redhat.com>  [f06d50e9a6fea032d580a5c144a6d7be3eb8bd1e]
+
+tfix copypasta
+
+
+2018-04-26  David Tardon  <dtardon@redhat.com>  [9181ad021cf1c200bc80edb9f5a6df5b780be046]
+
+tavoid name clash with MultiplanParser from libmwaw
+
+
 2018-04-24  osnola  <alonso@loria.fr>  [23fa7c1cfeb88d3f73b73a8e972229fb020a9532]
 
 tupdate CHANGES's files...

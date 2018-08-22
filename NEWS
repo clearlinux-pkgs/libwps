@@ -1,3 +1,7 @@
+0.4.9 -> 0.4.10
+- QuattroPro: add parser of .qwp files
+- all: support complex encoding...
+
 0.4.8 -> 0.4.9
 - QuattroPro: add parser to .wb3 files,
 - Multiplan: add parser to DOS v1-v3 files.
