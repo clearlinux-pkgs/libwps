@@ -4,7 +4,7 @@
 #
 Name     : libwps
 Version  : 0.4.10
-Release  : 2
+Release  : 3
 URL      : https://dev-www.libreoffice.org/src/libwps-0.4.10.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libwps-0.4.10.tar.xz
 Summary  : A library for reading Microsoft Works word processor documents
