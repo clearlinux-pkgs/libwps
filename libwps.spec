@@ -4,15 +4,15 @@
 #
 Name     : libwps
 Version  : 0.4.10
-Release  : 3
+Release  : 4
 URL      : https://dev-www.libreoffice.org/src/libwps-0.4.10.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libwps-0.4.10.tar.xz
 Summary  : A library for reading Microsoft Works word processor documents
 Group    : Development/Tools
 License  : LGPL-2.1 MPL-2.0-no-copyleft-exception
-Requires: libwps-bin
-Requires: libwps-lib
-Requires: libwps-license
+Requires: libwps-bin = %{version}-%{release}
+Requires: libwps-lib = %{version}-%{release}
+Requires: libwps-license = %{version}-%{release}
 BuildRequires : doxygen
 BuildRequires : pkgconfig(librevenge-0.0)
 BuildRequires : pkgconfig(librevenge-generators-0.0)
@@ -27,7 +27,7 @@ librevenge in order to build libwps. You can get librevenge from:
 %package bin
 Summary: bin components for the libwps package.
 Group: Binaries
-Requires: libwps-license
+Requires: libwps-license = %{version}-%{release}
 
 %description bin
 bin components for the libwps package.
@@ -36,9 +36,10 @@ bin components for the libwps package.
 %package dev
 Summary: dev components for the libwps package.
 Group: Development
-Requires: libwps-lib
-Requires: libwps-bin
-Provides: libwps-devel
+Requires: libwps-lib = %{version}-%{release}
+Requires: libwps-bin = %{version}-%{release}
+Provides: libwps-devel = %{version}-%{release}
+Requires: libwps = %{version}-%{release}
 
 %description dev
 dev components for the libwps package.
@@ -55,7 +56,7 @@ doc components for the libwps package.
 %package lib
 Summary: lib components for the libwps package.
 Group: Libraries
-Requires: libwps-license
+Requires: libwps-license = %{version}-%{release}
 
 %description lib
 lib components for the libwps package.
@@ -71,29 +72,38 @@ license components for the libwps package.
 
 %prep
 %setup -q -n libwps-0.4.10
+cd %{_builddir}/libwps-0.4.10
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1534950261
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1604353401
+export GCC_IGNORE_WERROR=1
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-make VERBOSE=1 V=1 %{?_smp_mflags} check
+make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1534950261
+export SOURCE_DATE_EPOCH=1604353401
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/libwps
-cp COPYING.LGPL %{buildroot}/usr/share/doc/libwps/COPYING.LGPL
-cp COPYING.MPL %{buildroot}/usr/share/doc/libwps/COPYING.MPL
+mkdir -p %{buildroot}/usr/share/package-licenses/libwps
+cp %{_builddir}/libwps-0.4.10/COPYING.LGPL %{buildroot}/usr/share/package-licenses/libwps/3704f4680301a60004b20f94e0b5b8c7ff1484a9
+cp %{_builddir}/libwps-0.4.10/COPYING.MPL %{buildroot}/usr/share/package-licenses/libwps/9744cedce099f727b327cd9913a1fdc58a7f5599
 %make_install
 
 %files
@@ -125,6 +135,6 @@ cp COPYING.MPL %{buildroot}/usr/share/doc/libwps/COPYING.MPL
 /usr/lib64/libwps-0.4.so.4.0.10
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/libwps/COPYING.LGPL
-/usr/share/doc/libwps/COPYING.MPL
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/libwps/3704f4680301a60004b20f94e0b5b8c7ff1484a9
+/usr/share/package-licenses/libwps/9744cedce099f727b327cd9913a1fdc58a7f5599
