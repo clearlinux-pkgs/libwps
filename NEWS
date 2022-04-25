@@ -1,3 +1,10 @@
+0.4.11 -> 0.4.12
+- add a minimalist parser for Pocket Word .psw and .pwi files
+
+0.4.10 -> 0.4.11
+- add a parser for XYWrite v2,v4
+- wks,wk1: try to improve the cell's reference retrieving
+
 0.4.9 -> 0.4.10
 - QuattroPro: add parser of .qwp files
 - all: support complex encoding...

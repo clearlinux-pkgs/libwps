@@ -1,3 +1,174 @@
+2020-09-03  ALONSO Laurent  <laurent.alonso@inria.fr>  [a10360f6d28b77993be39709d4e2d17963765b33]
+
+tcppcheck: try to remove some warnings, ...
+
+
+2020-09-03  ALONSO Laurent  <laurent.alonso@inria.fr>  [123b0ede5d86d1eada7ed499b2d0fae70fff994f]
+
+tconfigure.ac: add a --enable-asan option...
+
+
+2020-09-03  ALONSO Laurent  <laurent.alonso@inria.fr>  [83c3a602869363a52cd10056e8a6267ca95fa121]
+
+tPocketWord: add possibility to reset the default encoding...
+
+
+2020-04-16  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [5ba515142bd23dcc764f4024b879aee440f6f453]
+
+tPocket Word: activate this parser in release mode...
+
+
+2020-04-16  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [42a423941ac3d6aa6e7bcc6bf48674ad78772eab]
+
+tPocket Word: begin to retrieve text (in debug mode)...
+
+
+2020-04-14  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [cba8a977319e3395f68dcd38cdc2edf8dc57aae5]
+
+tPocket Word: begin to add a parser, to be continued...
+
+
+2020-04-02  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [4495179adb441dba2efe74267721115e2316d60a]
+
+tcoverity: correct many warnings + prepare code for a release
+
+
+2020-04-01  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [8e1f63db16393e03e284accfc57d06c3d4f76a70]
+
+tcppcheck: remove some warnings...
+
+
+2020-04-01  alonso  <laurent.alonso@inria.fr>  [18c69387d21bf7e638f0ca1d902f2f4d610832b3]
+
+tclang: correct a warning...
+
+
+2020-04-01  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [20f3011a0528cb95d9d63c8cef9a7fd329d54282]
+
+tXYWrite.cpp: silent a g++ warning
+
+
+2020-03-31  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [6c5bf150a25b096a3a31cf4c02bac9bca2db68e2]
+
+tg++: correct some warnings...
+
+
+2020-03-31  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [1081e22a4e63c4887ea73aff760e084a402da8ed]
+
+tXYWrite.cpp: astyle + minor modifications...
+
+
+2020-03-30  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [4411ec0ff51019c0755669383970f152da4ec410]
+
+tXYWrite: try to retrieve more styles...
+
+
+2020-03-29  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [22d68ec935f7facef342d1b4e5b51c275284a603]
+
+tXYWrite: try to retrieve some notes, ...
+
+
+2020-03-29  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [1e01268c2d1b8f36bc4df1da5285fdf06bce1962]
+
+tXYWrite: try to retrieve some frames...
+
+
+2020-03-28  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [cf5edd3248ca0a39a09e22170e3f14c8068f3d11]
+
+tXYWrite: try to retrieve some basic counters, 	+ add a warning if the file contains label/cross ref 	+ simplify the code...
+
+
+2020-03-28  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [8996db95dd4b7008a61b6374bede7633f9660965]
+
+tXYWrite: try to retrieve some numbering lists...
+
+
+2020-03-27  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [5763044d8cdb9c3e84e898e718253f704c2c708e]
+
+tTry to retrieve some styles...
+
+
+2020-03-25  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [1d5232cc84f1a74be29a6d8021ec1bbf033cfb50]
+
+tXYWrite: try to retrieve some tables...
+
+
+2020-03-24  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [731c85368067009ed42598e02b65542e7071e9e6]
+
+tXYWrite: try to retrieve the headers/footers...
+
+
+2020-03-23  Laurent Alonso(fr)  <alonso.laurent@gmail.fr>  [bef72445c6813d571eef4c6036606c292267b967]
+
+tXYWrite[v1-4]: add code to retrieve basic commands...
+
+
+2019-12-13  Miklos Vajna  <vmiklos@collabora.com>  [51559db46f962090e15ad507b83cf117f327ce16]
+
+tAvoid accessing static members through instance
+
+
+2019-12-12  Miklos Vajna  <vmiklos@collabora.com>  [ae22238a9466fbcb6fed4dd96bacdaabb95ac606]
+
+tThese can be static
+
+
+2019-12-11  Miklos Vajna  <vmiklos@collabora.com>  [eb2817c92d652acebb57bf975247eaeb9126e8f0]
+
+tThese can be const
+
+
+2019-12-11  Miklos Vajna  <vmiklos@collabora.com>  [362fd31f358ca239d48a1f9a60a2a5e503268fbc]
+
+tMultiplan: mark overriding function as such
+
+
+2019-12-11  Miklos Vajna  <vmiklos@collabora.com>  [10c3aa881ed6d65d802f679a360df0a352ee482c]
+
+tUse auto when initializing with a cast to avoid duplication
+
+
+2019-12-11  Miklos Vajna  <vmiklos@collabora.com>  [90d1fe1a095d1bbb7836d03eec955df3b62ed47b]
+
+tUse range-based for loops
+
+
+2019-10-31  alonso  <laurent.alonso@inria.fr>  [c1ba33b7505cff91f57d5aa7e8c6ff8706b63a21]
+
+tWKS4Spreadsheet.cpp: simplify the code...
+
+
+2019-10-31  alonso  <laurent.alonso@inria.fr>  [188933f0d66c77a19ccb0b5f5151a4c9f7203fbc]
+
+twks,wk1: do not change the maximum number of columns...
+
+
+2019-10-31  alonso  <laurent.alonso@inria.fr>  [39be60f9045a758178d90526ae66b0e3d24f348e]
+
+twks,wk1,...: try to read correctly the row cell's references...
+
+
+2019-10-31  alonso  <laurent.alonso@inria.fr>  [d74790b4bd55a3a11b56dbbd670c3baa1331e6dd]
+
+tlotus[wb1]: try to correct the retrieving of row references in formula...
+
+
+2019-10-21  Stephan Bergmann  <sbergman@redhat.com>  [9738ed97b10d5671b5e70f2c8149fe8f7949bce4]
+
+tMake comparison operator member functions const  which avoids overload resolution ambiguities in C++20, when a synthesized  candidate of operator == for a reversed-argument rewrite conflicts with the  actual operator ==, due to the asymmetric const-ness of the implicit object  parameter and the RHS parameter.
+
+
+2019-01-23  Miklos Vajna  <vmiklos@collabora.com>  [881c25d06df91e451de40cee4c1de8d407290217]
+
+tFix too small loop variables
+
+tThese loop variables had narrower type than the iteration's upper bound.
+
+2018-08-06  osnola  <alonso@loria.fr>  [cc128f1ff49eae6fdd1cdc4b1fc063ed69217342]
+
+tconfigure.ac: update minor version to prepare release...
+
+
 2018-08-06  osnola  <alonso@loria.fr>  [792e04dccd01f5d443a416f8613e0fde5a11ede6]
 
 tcppcheck: correct some warnings...
