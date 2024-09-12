@@ -1,4 +1,8 @@
 Configure miss: Darwin (Mac OS X) platform
 Configure miss: Darwin (Mac OS X) platform
+Configure miss: [[clang::fallthrough]]
+Configure miss: [[clang::fallthrough]]
+Configure miss: g++ option to enable C++11 features
+Configure miss: g++ option to enable C++11 features
 Configure miss: native Win32... checking for Win32 platform in general
 Configure miss: native Win32... checking for Win32 platform in general
